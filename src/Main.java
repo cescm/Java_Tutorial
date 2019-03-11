@@ -7,15 +7,18 @@ public class Main {
         c.setPotencia(200);
         c.setMarca("Mercedes");
         System.out.println(c.getInfo());
+        System.out.println(c.getMarca());
+        System.out.println(c.getPotencia());
 
-        Integer array[] = new Integer[7];
+
+        Integer[] array = new Integer[7];
 
         for (int count = 0;count < 7; count++){
-            array[count]=count+1;
+            array[count]=count+1; //en cada posición del array inserto su posición +1, es decir, en la 0 inserto un 1, en la 1 un 2 y así...
         }
         System.out.println(array.length);
 
-        Coche c2[] = new Coche[10]; //definimos un array de una clase
+        Coche[] c2 = new Coche[10]; //definimos un array de una clase
         c2[0] = new Coche();
         c2[1] = new Coche();
         c2[0].setMarca("Ford");
@@ -27,7 +30,7 @@ public class Main {
         System.out.println(c2[0].getInfo());
         System.out.println(c2[1].getInfo());
 
-        ArrayList<Coche> c3 = new ArrayList<Coche>();//vamos a usar una lista para meter los objetos
+        ArrayList<Coche> c3 = new ArrayList<>();//vamos a usar una lista para meter los objetos
         c3.add(c2[0]); //metemos el elemento de la posición 0 del array c2 que es un objeto de tipo Coche
         c3.add(c2[1]); //metemos el elemento de la posición 1 del array c2 que es un objeto de tipo Coche
         c3.add(c); //metemos el objeto c que también es un objeto de tipo coche
